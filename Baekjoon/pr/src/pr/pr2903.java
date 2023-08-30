@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 public class pr2903 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// 문자열 입력받기
+		// N 입력받기
 		int N = Integer.parseInt(br.readLine());
 		// 최종 출력
 		int result = (int)((Math.pow(2, N)+1)*(Math.pow(2, N)+1));
