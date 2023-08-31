@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 public class pr1193 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// 문자열 입력받기
+		// x 입력받기
 		int x = Integer.parseInt(br.readLine());
 		int sum = 0;
 		int count = 1;
