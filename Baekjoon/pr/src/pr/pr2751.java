@@ -6,6 +6,7 @@
 // 둘째 줄부터 N줄에 걸쳐 수를 입력 받고
 // 이를 오름차순 정렬해 N줄에 걸쳐 출력한다.
 // Arrays.sort()를 쓰면 시간초과가 되므로 Collections.sort()를 이용한다.
+// String을 이용하면 시간초과가 되므로 StringBuilder를 이용한다.
 
 import java.io.BufferedReader;
 import java.io.IOException;
