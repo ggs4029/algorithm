@@ -35,13 +35,9 @@ def filter_fft(image, mask):
 image = cv2.imread("images/filter_blur.jpg", cv2.IMREAD_GRAYSCALE)
 if image is None: raise Exception("영상파일 읽기 오류")
 
-# 블러링 마스크 원소 지정
-data = [1/9, 1/9, 1/9,
-         1/9, 1/9, 1/9,
-         1/9, 1/9, 1/9]
-
 # 제로 패딩을 이용하여 마스크 크기를 영상 크기로 맞춤
 mask = np.zeros(image.shape, np.float32)
+# 블러링 마스크
 for i in range(3):
     for j in range(3):
         mask[i][j] = 1/9
