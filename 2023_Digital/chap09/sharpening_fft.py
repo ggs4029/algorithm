@@ -10,6 +10,7 @@ from Common.fft2d import fft2, ifft2, calc_spectrum, fftshift
 def FFT(image):
     dft = np.fft.fft2(image)
     dft = fftshift(dft) # 주파수 시프트
+    #dft = cv2.dft(np.float32(image), flags=cv2.DFT_COMPLEX_OUTPUT)
     spectrum = calc_spectrum(dft) # 주파수 스펙트럼 영상
     return dft, spectrum
 
@@ -17,6 +18,7 @@ def FFT(image):
 def IFFT(dft, shape):
     dft = fftshift(dft) # 역 셔플링
     img = np.fft.ifft2(dft).real
+    #img = cv2.idft(dft, flags= cv2.DFT_SCALE)[:,:,0]
     img = img[:shape[0], :shape[1]] # 영삽입 부분 제거
     return cv2.convertScaleAbs(img)
 
@@ -34,7 +36,6 @@ def filter_fft(image, mask):
 
 image = cv2.imread("images/filter_sharpen.jpg", cv2.IMREAD_GRAYSCALE)
 if image is None: raise Exception("영상파일 읽기 오류")
-
 
 # 제로 패딩을 이용하여 마스크 크기를 영상 크기로 맞춤
 mask = np.zeros(image.shape, np.float32)
