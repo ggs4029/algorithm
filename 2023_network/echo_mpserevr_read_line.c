@@ -1,3 +1,6 @@
+// echo_mpserver_read_line.c
+// Signal (SIGCHLD) handler 포함
+
 #include "mylib2.h"
 #include <signal.h>
 #include <sys/wait.h>
