@@ -5,7 +5,9 @@
 // 포함되어 있는 것이 총 몇 개인지 구하는 프로그램
 // 방법-----------------------------
 // n,m을 입력 받고 n+m개의 문자열들을 입력 받는다.
-//
+// 입력 받은 문자열이 집합 S에 있는지 if문으로 확인한 후
+// 있으면 sum+1
+// 최종적으로 sum을 출력
 
 import java.io.BufferedReader;
 import java.io.IOException;
