@@ -14,7 +14,7 @@ import java.util.List;
 
 public class pr1174 {
 	static int[] num = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };	// 거꾸로 만든 숫자 배열
-	static List<Long> output = new ArrayList<>();			// 줄어드는 수를 저장할 스택
+	static List<Long> output = new ArrayList<>();			// 줄어드는 수를 저장할 리스트
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		// 입력
