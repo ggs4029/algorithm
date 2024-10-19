@@ -35,9 +35,8 @@ public class pr1003 {
 		}
 		// 출력
 		StringBuilder sb = new StringBuilder();
-		for (int n : input) {
+		for (int n : input)
 			sb.append(dp[n][0]).append(" ").append(dp[n][1]).append("\n");
-		}
 		System.out.print(sb.toString());
 	}
 }
