@@ -48,6 +48,7 @@ public class pr11505 {
 		System.out.print(sb.toString());
 	}
 
+	// 세그먼트 트리 클래스
 	public static class SegmentTree {
 		public static long[] tree;
 		public static long mod;
@@ -67,7 +68,7 @@ public class pr11505 {
 				return tree[node];
 			}
 			else {																// 리프노드 아니면
-				tree[node] = init(num, node*2, start, (start+end)/2)*			// 자식노드(좌, 우) 더해서 리턴(재귀)
+				tree[node] = init(num, node*2, start, (start+end)/2)*			// 자식노드(좌, 우) 곱해서 리턴(재귀)
 						init(num, node*2+1, (start+end)/2+1, end) % mod;
 				return tree[node];
 			}
