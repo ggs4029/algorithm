@@ -1,3 +1,7 @@
+// 백준 30007번
+// 라면을 제일 맛있게 먹을수 있는 물 양을 구하는 문제.
+// 문제대로 입력 받고 공식대로 구해서 출력.
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
