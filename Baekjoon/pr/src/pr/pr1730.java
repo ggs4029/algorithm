@@ -29,7 +29,6 @@ public class pr1730 {
 		int y = 0;
 		for (int i = 0; i < input.length(); i++) {
 			char draw = input.charAt(i);
-
 			switch(draw) {
 			case 'L':
 				if(y!=0) {
