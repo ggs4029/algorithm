@@ -25,7 +25,7 @@ public class pr10655 {
 			x[i] = Integer.parseInt(st.nextToken());
 			y[i] = Integer.parseInt(st.nextToken());
 		}
-		// 체크포인트 하나 건너뛰고 달릴 때의 최소거리 구하기
+		// 체크포인트 하나 건너뛰고 달릴 때의 최소거리 구하기 
 		long sum = 0;														// 총 뛴 거ㅣㄹ
 		long tmp = 0;														// 건너뛴 거리의 최댓값 저장할 변수
 		for(int i=1; i<n; i++)
