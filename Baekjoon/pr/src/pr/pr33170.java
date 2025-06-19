@@ -10,6 +10,9 @@ public class pr33170 {
 		int b = Integer.parseInt(br.readLine());
 		int c = Integer.parseInt(br.readLine());
 		// 출력
-		System.out.print((a+b+c)%10);
+		if(a+b+c <= 21)
+			System.out.print(1);
+		else
+			System.out.print(0);
 	}
 }
